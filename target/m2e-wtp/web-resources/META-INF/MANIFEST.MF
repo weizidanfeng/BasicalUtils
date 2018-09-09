@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+Implementation-Title: BasicalUtils
+Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: Usagi
+Implementation-Vendor-Id: com.mute
 Build-Jdk: 1.8.0_144
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/BasicalUtils
 Created-By: Maven Integration for Eclipse
 

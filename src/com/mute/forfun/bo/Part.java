@@ -1,5 +1,7 @@
 package com.mute.forfun.bo;
 
+import java.util.UUID;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -26,5 +28,8 @@ public class Part {
 	
 	@Getter  @Setter
 	private int type;//类型
+	
+	@Getter
+	private UUID partUUID = UUID.randomUUID();
 
 }

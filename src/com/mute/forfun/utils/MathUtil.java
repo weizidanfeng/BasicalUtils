@@ -11,5 +11,15 @@ public class MathUtil {
 		
 		
 	}
+	
+	public static boolean isHitPecentage(int pecentage)throws Exception{
+		int randomInt  = randomINT(0,100);
+		boolean result=false;
+		if(pecentage>randomInt) {
+			result = true;
+		}
+		return result;
+		
+	}
 
 }

@@ -8,6 +8,21 @@ public class StaticInputs {
 	public static final int PART_TYPE_FATAL = 2;
 	public static final int PART_TYPE_OPTIONAL = 3;
 	
+	public static final int ACTIONDECISION_DONOTHING =0;
+	public static final int ACTIONDECISION_RANDOMMOVE =1;
+	public static final int ACTIONDECISION_RANDOMSHOT =2;
+	public static final int ACTIONDECISION_REFRESHEMENYLIST =3;
+	public static final int ACTIONDECISION_SHOTEMENY =4;
+	public static final int ACTIONDECISION_MOVETOEMENY =5;
+	public static final int ACTIONDECISION_FIX =100;
+	
+	public static final int IQTYPE_IDIOT=1;
+	public static final int IQTYPE_NORMAL=2;
+	public static final int IQTYPE_TALENT=3;
+	public static final int IQTYPE_ALIEN=4;
+	public static final int IQTYPE_GOD=5;
+	
+	
 	public static final String PART_SIMULATION_HAND ="手,3,50,100,15,20,5,10,10,50";
 	public static final String PART_SIMULATION_LEG ="脚,3,50,100,5,10,15,20,10,50";
 	public static final String PART_SIMULATION_BODY ="身体,2,200,400,5,5,5,5,5,5";

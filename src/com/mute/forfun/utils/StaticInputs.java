@@ -27,6 +27,10 @@ public class StaticInputs {
 	public static final String PART_SIMULATION_LEG ="脚,3,50,100,5,10,15,20,10,50";
 	public static final String PART_SIMULATION_BODY ="身体,2,200,400,5,5,5,5,5,5";
 	public static final String PART_SIMULATION_HEAD ="头部,1,200,200,60,140,0,0,0,0";
+	public static final String PART_SIMULATION_ROCK ="岩石,1,1000,2000,0,0,0,0,0,0";
+	
+	public static final String TEST_TAMPLATE_HUMAN="human";
+	public static final String TEST_TAMPLATE_ROCK ="rock";
 
 	
 

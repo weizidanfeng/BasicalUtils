@@ -1,24 +1,36 @@
 package com.mute.forfun.main;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.mute.forfun.bo.Damage;
-import com.mute.forfun.bo.Entity;
+import com.mute.forfun.bo.InitSeed;
+import com.mute.forfun.bo.World;
 
 public class BaseDirector {
 	
-	public HashMap getNextRoundStatus(ArrayList<Entity> entitys)throws Exception{
-		ArrayList<Entity> nextRoundEntity = new ArrayList<Entity>();
-		ArrayList<Damage> damages = new ArrayList<Damage>();
-		for(Entity i:entitys) {
-			if(i.isAlive()) {
-				int[] actionList = i.actionDecision();
-			}
-			
-		}
-		
+	private World myWorld;
+	
+	public static void main(String[] args) throws Exception {
+		initWorld();
 		
 	}
+	
+	
+	public  static void initWorld()throws Exception{
+		World newWorld = new World();
+		InitSeed seed = new InitSeed();
+		seed.setMapX(100);
+		seed.setMapY(100);
+		HashMap<String,Integer> actorsGroup = new HashMap<String,Integer>();		
+		HashMap<String,Integer> mapObjectGroup = new HashMap<String,Integer>();
+		
+		actorsGroup.put("human", 10);
+		mapObjectGroup.put("Rock", 200);
+		seed.setActorsGroup(actorsGroup);
+		seed.setMapObjectGroup(mapObjectGroup);
+		
+		newWorld.initWorld(seed);
+		this.myWorld = newWorld;
+	}
+
 
 }

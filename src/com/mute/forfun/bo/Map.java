@@ -1,6 +1,6 @@
 package com.mute.forfun.bo;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -10,7 +10,7 @@ public class Map {
 	
 	
 	@Getter  @Setter
-	private ArrayList<Position> pos;
+	private HashMap<String,Position> posMap;
 	
 	@Getter  @Setter
 	private int x;
@@ -22,17 +22,11 @@ public class Map {
 	
 	
 	public void initMap()throws Exception{
-		ArrayList<Position> myPos=new ArrayList<Position>();
-		
 		for(int i=0;i<x;i++) {
 			for(int j=0;j<y;j++) {
-				Position aPos = new Position();
-				aPos.setX(i);
-				aPos.setY(j);
-				myPos.add(aPos);
+				Position myPos = new Position();
+				posMap.put(String.valueOf(i)+String.valueOf(j), myPos);
 			}
 		}
-		this.pos=myPos;
-		
 	}
 }

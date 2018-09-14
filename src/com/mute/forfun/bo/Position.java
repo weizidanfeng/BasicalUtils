@@ -1,6 +1,7 @@
 package com.mute.forfun.bo;
 
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.UUID;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -14,7 +15,7 @@ public class Position {
 	private int y;
 	
 	@Getter  @Setter
-	private ArrayList<Part> parts;
+	private HashMap<UUID,Part> parts;
 	
 
 }

@@ -1,0 +1,11 @@
+<root>
+<minmapX>0</minmapX>
+<minmapY>0</minmapY>
+<maxmapX>100</maxmapX>
+<maxmapY>100</maxmapY>
+<majorPartAmountByComponentTamplateName>HUMANHEAD,1,HUMANBODY,1</majorPartAmountByComponentTamplateName>
+<functionalPartAmountByComponentTamplateName>HUMANLEFTHAND,1,HUMANRIGHTHAND,1</functionalPartAmountByComponentTamplateName>
+<movementPartAmountByComponentTamplateName>HUMANLEFTLEG,1,HUMANRIGHTLEG,1</movementPartAmountByComponentTamplateName>
+<equipmentAmountByComponentTamplateName>FOOD,5,GUN,2,KNIFE,2</equipmentAmountByComponentTamplateName>
+
+</root>

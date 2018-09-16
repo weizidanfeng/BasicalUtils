@@ -14,8 +14,18 @@ public class Position {
 	@Getter  @Setter
 	private int y;
 	
-	@Getter  @Setter
-	private HashMap<UUID,Part> parts;
+
+	public String getTxtXY() {
+		return "("+x+","+y+")";
+	}
+
+
+	public Position(int x, int y) {
+		super();
+		this.x = x;
+		this.y = y;
+	}
+	
 	
 
 }

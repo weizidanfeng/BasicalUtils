@@ -1,0 +1,8 @@
+<root>
+<minremainAmount>1</minremainAmount>
+<minrange>0</minrange>
+<minbasicAP>50</minbasicAP>	
+<maxremainAmount>10</maxremainAmount>
+<maxrange>0</maxrange>
+<maxbasicAP>200</maxbasicAP>
+</root>

@@ -10,7 +10,7 @@ public class Map {
 	
 	
 	@Getter  @Setter
-	private HashMap<String,Position> posMap;
+	private HashMap<String,Position> posMap = new HashMap<String,Position>();
 	
 	@Getter  @Setter
 	private int x;
@@ -24,7 +24,7 @@ public class Map {
 	public void initMap()throws Exception{
 		for(int i=0;i<x;i++) {
 			for(int j=0;j<y;j++) {
-				Position myPos = new Position();
+				Position myPos = new Position(i,j);
 				posMap.put(String.valueOf(i)+String.valueOf(j), myPos);
 			}
 		}

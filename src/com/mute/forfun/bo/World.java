@@ -7,6 +7,7 @@ import java.util.Map.Entry;
 import java.util.UUID;
 
 import com.mute.forfun.bo.tamplates.EntityTamplate;
+import com.mute.forfun.utils.PosUtil;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -45,6 +46,9 @@ public class World {
 			for(int i=0;i<entityAmount;i++) {
 				Entity actor = new Entity();
 				actor.initEntityByTamplate(tamplate);
+				Position initPos = PosUtil.getRandomPos(seed.getMapX(), seed.getMapY());
+				actor.setCurrentPos(initPos);
+				actor.setLastPos(initPos);
 				newActorMap.put(actor.getEntityUUID(), actor);
 			}
 		}
@@ -63,6 +67,9 @@ public class World {
 				for(int i=0;i<entityAmount;i++) {
 					Entity mapObj = new Entity();
 					mapObj.initEntityByTamplate(tamplate);
+					Position initPos = PosUtil.getRandomPos(seed.getMapX(), seed.getMapY());
+					mapObj.setCurrentPos(initPos);
+					mapObj.setLastPos(initPos);
 					newActorMap.put(mapObj.getEntityUUID(), mapObj);
 				}
 		}
